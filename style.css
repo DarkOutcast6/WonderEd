@@ -8,6 +8,9 @@ body {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
 /* Nav */
 nav {
   display: flex;
@@ -18,7 +21,7 @@ nav {
   width: 100%;
   height: auto;
   padding: 20px;
-  background-color: #00ffaa;
+  background-color: #00cc47;
 }
 
 a.subNav {
@@ -68,6 +71,8 @@ button {
   position: relative;
   background: #100720;
   transition: 0.1s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 button::after {
