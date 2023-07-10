@@ -47,6 +47,7 @@ img.subNav {
 /* Sec1 */
 div.sec1 {
   text-align: center;
+  /* display: flex; */
 }
 
 h1.sec1 {
@@ -59,7 +60,7 @@ h2.sec1 {
 }
 
 /* Button */
-button {
+button.rainbow {
   font-family: "Montserrat";
   width: 145px;
   height: 52px;
@@ -75,7 +76,7 @@ button {
   margin-right: 10px;
 }
 
-button::after {
+button.rainbow::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -87,8 +88,80 @@ button::after {
   top: 0;
 }
 
-button:active {
+button.rainbow:active {
   transform: scale(0.9) rotate(3deg);
   background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
   transition: 0.5s;
+}
+
+/* Articles */
+.articles {
+  width: 100%;
+  height: auto;
+  /* display: flex; */
+}
+
+a.article {
+  color: black;
+  transition: 0.3s;
+  width: 100%;
+  min-width: 100%;
+  height: 100px;
+  font-family: "Montserrat";
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+
+a.article:hover {
+  color: grey;
+  transition: 0.3s;
+}
+
+h3.article {
+  border-top: 3px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
+}
+
+p.article {
+  padding: 10px;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
+}
+
+img.article {
+  display: flex;
+  /* justify-content: right; */
+}
+
+/* Posts */
+.post {
+  text-align: center;
+}
+
+h1.post {
+  font-family: "Teko";
+}
+
+h2.post, h3.post {
+  font-family: "Inter";
+}
+
+h4.post {
+  font-family: "Inter";
+  color: grey;
+  font-weight: lighter;
+}
+
+p.post {
+  font-family: "Montserrat";
+}
+
+img.post {
+  border-radius: 20px;
 }
